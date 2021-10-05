@@ -2,26 +2,12 @@
 <html lang="es">
 
 <head>
-  <meta charset="utf-8">
+    <title>Aulas</title>
+    <meta charset="utf-8">
 </head>
 
-<body>
-  <form class="form">
-    <h2>Introduce Código Curso</h2>
-    <p type="Código de Curso:"><input placeholder="Escribe el código del curso."></input></p>
-    <p type="Nombre:"><input placeholder="¿Cómo te llamas?"></input></p>
-    <p>
-      <input type="submit" name="Aceptar" value="Aceptar">
-   </p>
-
-   <p>
-        <input type="reset" name="Cancelar" value="Cancelar">
-    </p>
-  </form>
-</body>
-
 <style>
-  body {
+ body {
     background: #70e693;
     margin: 0;
   }
@@ -99,5 +85,40 @@
     box-shadow: 10px 10px 40px -1;
   }
 </style>
+
+<body>
+  <form action="" method="GET">
+      <h1>Formulario de registro de aulas</h1>
+
+      <p>
+        <label name="nombreaula">Nombre del aula:</label>
+        <input name="nombreaula" type="text" maxlength="20">
+    </p>
+
+    <p>
+        <label name="numeroaula">Número del aula:</label>
+        <input name="numeroaula" type="number">
+    </p>
+
+    <p>
+        <label name="numeroaula">Planta:</label>
+        <input name="numeroaula" type="number">
+    </p>
+    <p>
+        <label name="descripcion">Descripción:
+        <textarea name="descripcion" rows="3" cols="20"></textarea>
+        </label>
+    </p>
+
+    <p>
+        <input type="submit" name="Aceptar" value="Aceptar">
+    </p>
+
+    <p>
+        <input type="reset" name="Cancelar" value="Cancelar">
+    </p>
+  </form>
+</body>
+
 
 </html>
