@@ -60,7 +60,6 @@
 		   
 			 #boton{
 			   padding: 8px 12px;
-			   margin: 8px 0 0;
 			   width: 100%;
 			   font-family: 'Montserrat', sans-serif;
 			   border: 2px solid #78788c;
@@ -71,7 +70,10 @@
 		   
 			 a{
     			text-decoration: none;
- 			 }
+				display: block;
+				width: 100%;
+
+			 }
 			 #boton:focus {
 			   border: 2px solid black;
 			   color: black;
@@ -87,7 +89,7 @@
 			<p><label>Edad:</label><input type="number" name="edad"></p>
 			<p><label>Dirección:</label><input type="text" name="direccion"></p>
 			<p><input type="submit"value="Enviar" id="boton"></p>
-			
+
 			<button id="boton"><a href="inicio.html">Atrás</a></button>
 			</form>
 		</body>
