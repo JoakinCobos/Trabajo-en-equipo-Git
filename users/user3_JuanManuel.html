@@ -15,8 +15,8 @@
     </p>
 
     <p>
-      <label>Nombre:</label>
-      <input type="text" placeholder="¿Cómo te llamas?">
+      <label>Nombre del curso:</label>
+      <input type="text" placeholder="Nombre del curso">
     </p>
 
     <p>
@@ -30,11 +30,11 @@
     </p>
 
     <p>
-      <input type="submit" name="Aceptar" value="Aceptar">
+      <input type="submit" name="Aceptar" value="Aceptar" id="boton">
     </p>
 
    <p>
-      <input type="reset" name="Cancelar" value="Cancelar">
+      <input type="reset" name="Cancelar" value="Cancelar" id="boton">
     </p>
 
     <p>
@@ -104,6 +104,7 @@
   }
   #boton{
     padding: 8px 12px;
+    width: 100%;
     margin: 8px 0 0;
     font-family: 'Montserrat', sans-serif;
     border: 2px solid #78788c;
@@ -112,6 +113,9 @@
     transition: all .3s;
   }
 
+  a{
+    text-decoration: none;
+  }
   #boton:focus {
     border: 2px solid black;
     color: black;

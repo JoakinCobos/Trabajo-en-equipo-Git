@@ -5,8 +5,8 @@
       <div>
       <h1>Página de Juanma, Joaquin, Rafa y Adrián</h1>
       <img src="hacker.jpg" width="600" height="400" alt="fotohacker">
-      <a href="acceso.html"><button>Acceso</button></a>
-      <a href="usu2_Adrian.html"><button>Registros</button></a>
+      <a href="acceso.html"><button id="boton">Acceso</button></a>
+      <a href="usu2_Adrian.html"><button id="boton">Registros</button></a>
       </div>
     </body>
   
@@ -70,19 +70,23 @@ body {
   }
 
   #boton{
-    padding: 8px 12px;
-    margin: 8px 0 0;
-    font-family: 'Montserrat', sans-serif;
-    border: 2px solid #78788c;
-    color: #5a5a6e;
-    cursor: pointer;
-    transition: all .3s;
-  }
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  border: 2px solid #78788c;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all .3s;
+}
 
-  #boton:focus {
-    border: 2px solid black;
-    color: black;
-  }
+a{
+  text-decoration: none;
+}
+#boton:focus {
+  border: 2px solid black;
+  color: black;
+}
 </style>
 
 </html>
