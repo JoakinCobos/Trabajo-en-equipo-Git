@@ -6,35 +6,56 @@
 </head>
 
 <body>
-  <form class="form">
-    <h2>Introduce Código Curso</h2>
-    <p type="Código de Curso:"><input placeholder="Escribe el código del curso."></input></p>
-    <p type="Nombre:"><input placeholder="¿Cómo te llamas?"></input></p>
-    <p type="Descripción:"><input placeholder="Duración del curso."></input></p>
-    <p type="Horas de duración:"><input type="number" min="0" max="1000" placeholder="Horas de duración del curso."></input></p>
+  <form action="" class="form" method="GET">
+    <h1>Introduce Código Curso</h1>
+
+    <p>
+      <label>Código del curso</label>
+      <input type="text" placeholder="Escribe el código del curso.">
+    </p>
+
+    <p>
+      <label>Nombre:</label>
+      <input type="text" placeholder="¿Cómo te llamas?">
+    </p>
+
+    <p>
+      <label>Descripción:</label>
+      <textarea></textarea>
+    </p>
+
+    <p>
+      <label>Horas de duración:</label>
+      <input type="number" min="0" max="1000" placeholder="Horas de duración del curso.">
+    </p>
+
     <p>
       <input type="submit" name="Aceptar" value="Aceptar">
-   </p>
+    </p>
 
    <p>
-        <input type="reset" name="Cancelar" value="Cancelar">
+      <input type="reset" name="Cancelar" value="Cancelar">
     </p>
-    <p><button value="Atrás" id="boton"><a href="inicio.html">Atrás</a></button></p>
+
+    <p>
+      <button value="Atrás" id="boton"><a href="inicio.html">Atrás</a></button>
+    </p>
   </form>
 </body>
 
 <style>
-  body {
+ body {
     background: #70e693;
-    margin: 0;
+    margin: 0 auto;
   }
 
-  .form {
+  form {
     width: 340px;
     background: #e6e6e6;
+    margin:auto;
+    margin-top: 100px;
     border-radius: 8px;
     box-shadow: 0 0 40px -10px #000;
-    margin: calc(50vh - 220px) auto;
     padding: 20px 30px;
     max-width: calc(100vw - 40px);
     box-sizing: border-box;
@@ -42,10 +63,11 @@
     position: relative;
   }
 
-  h2 {
+  h1 {
     margin: 10px 0;
     padding-bottom: 10px;
-    width: 180px;
+    width: 100%;
+    font-size: 18px;
     color: #78788c;
     border-bottom: 3px solid #78788c;
   }
@@ -67,7 +89,7 @@
     border-bottom: 2px solid #78788c;
   }
 
-  p:before {
+  label {
     content: attr(type);
     display: block;
     margin: 28px 0 0;
@@ -75,47 +97,26 @@
     color: #5a5a5a;
   }
 
-  button {
-    float: right;
+  textarea{
+    width: 100%;
+    height:80px;
+    border: 1px solid #78788c;
+  }
+  #boton{
     padding: 8px 12px;
     margin: 8px 0 0;
     font-family: 'Montserrat', sans-serif;
     border: 2px solid #78788c;
-    background: 0;
     color: #5a5a6e;
     cursor: pointer;
     transition: all .3s;
   }
 
-  div {
-    content: 'Hi';
-    position: absolute;
-    bottom: -15px;
-    right: -20px;
-    background: #50505a;
-    color: #fff;
-    width: 320px;
-    padding: 16px 4px 16px 0;
-    border-radius: 6px;
-    font-size: 13px;
-    box-shadow: 10px 10px 40px -1;
+  #boton:focus {
+    border: 2px solid black;
+    color: black;
   }
 
-  #boton{
-			   padding: 8px 12px;
-			   margin: 8px 0 0;
-			   width: 100%;
-			   font-family: 'Montserrat', sans-serif;
-			   border: 2px solid #78788c;
-			   color: #5a5a6e;
-			   cursor: pointer;
-			   transition: all .3s;
-			 }
-		   
-			 #boton:focus {
-			   border: 2px solid black;
-			   color: black;
-			 }
 </style>
 
 </html>
