@@ -9,3 +9,6 @@ SET Código = '99', Nombre= 'Matemáticas', Matemáticas académicas. = '50', Ho
 
 UPDATE EDIFICIO4
 SET Nombre = 'Empires States', Descripción= 'Muy alto';
+
+UPDATE USUARIO10
+SET Nombre = 'Juan', Apellido= 'Manuel', Edad = '19', Dirección = 'Madrid'; 
