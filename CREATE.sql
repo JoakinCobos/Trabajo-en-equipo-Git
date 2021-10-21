@@ -24,3 +24,8 @@ CREATE TABLE EDIFICIO4 (
     Nombre varchar(255),
     Descripcion varchar(255),
 );
+
+CREATE TABLE EDIFICIO20 (
+    Nombre varchar(255),
+    Descripcion varchar(255),
+);
