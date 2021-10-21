@@ -11,4 +11,4 @@ UPDATE EDIFICIO4
 SET Nombre = 'Empires States', Descripción= 'Muy alto';
 
 UPDATE USUARIO10
-SET Nombre = 'Juan', Apellido= 'Manuel', Edad = '19', Dirección = 'Madrid'; 
+SET Nombre = 'Juan', Apellido= 'Manuel', Edad = '19', Dirección = 'Sevilla'; 
